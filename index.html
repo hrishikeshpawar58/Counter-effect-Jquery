@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+            <style>
+                .content{
+                    text-align: center;
+                    display: none;
+                    
+                }
+                .item:hover .content{
+                    display: block;
+                }
+                img:hover{
+                    transform: scaleX(1.1);
+                }
+                .item{
+                    overflow: hidden;
+                }
+                .content p{
+                    text-align: justify;
+                }
+                .content button{
+                    width: 100%;
+                    height: 50px;
+                    background-color: black;
+                    color: white;
+                    text-transform:capitalize ;
+                }
+                .content button:hover{
+                    cursor: pointer;
+                }
+            </style>
+
+    </head>
+    <body>
+        <h1>Watch Free Movies here we have <span id="movie">1000</span>+ -- <span id="here">24</span>hour</h1>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="assets/animal.avif" alt=""><br>
+                <div class="content">
+                    <h1>Animal</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos similique veritatis optio libero, voluptatem eligendi?</p>
+                    <button>Watch Now</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/aqua.avif" alt=""><br>
+                <div class="content">
+                    <h1>AquaMan</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos similique veritatis optio libero, voluptatem eligendi?</p>
+                    <button>Watch Now</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/color.avif" alt=""><br>
+                <div class="content">
+                    <h1>Animal</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos similique veritatis optio libero, voluptatem eligendi?</p>
+                    <button>Watch Now</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/dhunki.avif" alt=""><br>
+                <div class="content">
+                    <h1>Dhunki</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos similique veritatis optio libero, voluptatem eligendi?</p>
+                    <button>Watch Now</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/form.avif" alt=""><br>
+                <div class="content">
+                    <h1>Animal</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos similique veritatis optio libero, voluptatem eligendi?</p>
+                    <button>Watch Now</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/salar.avif" alt=""><br>
+                <div class="content">
+                    <h1>Salaar</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos similique veritatis optio libero, voluptatem eligendi?</p>
+                    <button>Watch Now</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/sam.avif" alt=""><br>
+                <div class="content">
+                    <h1>Sam Bahadur</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos similique veritatis optio libero, voluptatem eligendi?</p>
+                    <button>Watch Now</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/zimma.avif" alt=""><br>
+                <div class="content">
+                    <h1>Zimma</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos similique veritatis optio libero, voluptatem eligendi?</p>
+                    <button>Watch Now</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="countMe.min.js"></script>
+        <script>
+            $("#movie").countMe(0,0);
+            $("#here").countMe(40,80);
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                autoplay:true,
+                autoplayTimeout:1000,
+                autoplayHoverPause:true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            })
+        </script>
+
+    </body>
+
+</html>
